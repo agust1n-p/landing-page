@@ -44,7 +44,7 @@ a {
   color: #F9FAF8;
 }
 
-a:hover {
+ul a:hover {
   color: #000;
 }
 
@@ -54,7 +54,7 @@ a:hover {
 
   background-color: #1F2937;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 18px;
   padding-bottom: 120px;
   flex-wrap: wrap;
@@ -96,7 +96,7 @@ h1 {
 }
 
 button {
-  width: 85px;
+  width: 105px;
   height: 35px;
   background-color: #3882F6;
   color: #F9FAF8;
@@ -110,6 +110,10 @@ button {
 button:hover {
   background-color: #F9FAF8;
   border: 2px solid #3882F6;
+  color: #3882F6;
+}
+
+button:hover a {
   color: #3882F6;
 }
 
@@ -161,6 +165,7 @@ h2 {
 
 .images p {
   padding-right: 45px;
+  align-self: flex-start;
 }
 
 /*Author*/
@@ -193,6 +198,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 30px;
 }
 
 .content {
@@ -206,20 +213,28 @@ h2 {
   margin: 5%;
   text-align: left;
   gap: 15%;
-  padding: 6%;
+  padding: 2%;
+  flex-wrap: wrap;
 
 }
 
 .c-right {
   flex: 1;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .c-left {
   flex: 2;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 h3 {
   font-weight: bold;
+
 }
 
 .c-right button {
